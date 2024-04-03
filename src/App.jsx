@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/Home";
 import Settings from "./pages/Settings";
-import Coures from "./pages/Coures";
+import Courses from "./pages/Courses";
 const App = () => {
  
   return (
@@ -11,7 +11,7 @@ const App = () => {
         <Routes>
           <Route path="/" exact element={<Home />  } />
           <Route path="/settings" exact element={<Settings />  } />
-          <Route path="/courses" exact element={<Coures />  } />
+          <Route path="/courses" exact element={<Courses />  } />
           </Routes>
           </Router>
     </div>

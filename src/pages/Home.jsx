@@ -1,5 +1,6 @@
 import AdminSidebar from "../Components/AdminSidebar";
 import Header from "../Components/Header";
+import Settings from "./Settings";
 
 const Home = () => {
   return (
@@ -7,7 +8,7 @@ const Home = () => {
       <Header />
       <div className="flex">
         <AdminSidebar />
-        <div className="">This is the Admin</div>
+        <Settings />
       </div>
     </div>
   );
