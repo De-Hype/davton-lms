@@ -1,17 +1,11 @@
-import AdminSidebar from "../Components/AdminSidebar";
-import Header from "../Components/Header";
-import Settings from "./Settings";
+import Settings from "./Settings"
 
 const Home = () => {
   return (
-    <div className="">
-      <Header />
-      <div className="flex">
-        <AdminSidebar />
+    <div>
         <Settings />
-      </div>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

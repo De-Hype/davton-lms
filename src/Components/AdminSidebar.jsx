@@ -4,6 +4,7 @@ import {FcComboChart, FcDepartment} from "react-icons/fc";
 import {IoIosSettings} from "react-icons/io";
 import {FaPowerOff} from "react-icons/fa";
 import {RiAdminFill} from "react-icons/ri";
+import {Link} from "react-router-dom"
 const AdminSidebar = () => {
   return (
     <div className="h-screen shadow-2xl border-r w-[250px] pt-5 ">
@@ -13,79 +14,79 @@ const AdminSidebar = () => {
         </div>
         <div className="mt-3">
             <div className="">
-                <button type="button" className="hover:border-l-8 hover:border-green-800 hover:bg-slate-100 transition-all py-2 w-full flex items-center justify-center">  
-                <span className=" w-[70%] pl-3 flex items-center gap-3">
+                <Link to="/dashboard"  className="hover:border-l-8 hover:border-green-800 hover:bg-slate-100 transition-all py-2 w-full flex items-center justify-center">  
+                <span className=" w-[70%] pl-3  flex items-center gap-3">
                     <span><MdDashboard className="" /></span>
-                    <p className="">Dashboard</p>
+                    <p className="font-medium">Dashboard</p>
                 </span>
-            </button>
+            </Link>
             </div>
             <div className="">
                 <p className="px-9 font-light text-slate-600">Staff Management</p>
                 <div className="flex flex-col">
-                    <button type="button" className="hover:border-l-8 hover:border-green-800 hover:bg-slate-100 transition-all py-2 w-full flex items-center justify-center">  
+                    <Link to='/staff' className="hover:border-l-8 hover:border-green-800 hover:bg-slate-100 transition-all py-2 w-full flex items-center justify-center">  
                         <span className=" w-[70%] pl-3 flex items-center gap-3">
                             <span><HiMiniUserGroup /></span>
-                            <p className="">Staff</p>
+                            <p className="font-medium">Staff</p>
                         </span>
-                    </button>
-                    <button type="button" className="hover:border-l-8 hover:border-green-800 hover:bg-slate-100 transition-all py-2 w-full flex items-center justify-center">  
+                    </Link>
+                    <Link to="/department" className="hover:border-l-8 hover:border-green-800 hover:bg-slate-100 transition-all py-2 w-full flex items-center justify-center">  
                         <span className=" w-[70%] pl-3 flex items-center gap-3">
                             <span><FcDepartment  className="text-black" /> </span>
-                            <p className="">Department</p>
+                            <p className="font-medium">Department</p>
                         </span>
-                    </button>
-                    <button type="button" className="hover:border-l-8 hover:border-green-800 hover:bg-slate-100 transition-all py-2 w-full flex items-center justify-center">  
+                    </Link>
+                    <Link to="/courses" className="hover:border-l-8 hover:border-green-800 hover:bg-slate-100 transition-all py-2 w-full flex items-center justify-center">  
                         <span className=" w-[70%] pl-3 flex items-center gap-3">
                             <span><MdLibraryBooks /></span>
-                            <p className="">Courses</p>
+                            <p className="font-medium">Courses</p>
                         </span>
-                    </button>
-                    <button type="button" className="hover:border-l-8 hover:border-green-800 hover:bg-slate-100 transition-all py-2 w-full flex items-center justify-center">  
+                    </Link>
+                    <Link to="reports" className="hover:border-l-8 hover:border-green-800 hover:bg-slate-100 transition-all py-2 w-full flex items-center justify-center">  
                         <span className=" w-[70%] pl-3 flex items-center gap-3">
                             <span><FcComboChart className="text-black" /></span>
-                            <p className="">Reports</p>
+                            <p className="font-medium">Reports</p>
                         </span>
-                    </button>
-                    <button type="button" className="hover:border-l-8 hover:border-green-800 hover:bg-slate-100 transition-all py-2 w-full flex items-center justify-center">  
+                    </Link>
+                    <Link to="quizzes" className="hover:border-l-8 hover:border-green-800 hover:bg-slate-100 transition-all py-2 w-full flex items-center justify-center">  
                         <span className=" w-[70%] pl-3 flex items-center gap-3">
                             <span><MdQuiz className="" /> </span>
-                            <p className="">Quizzes</p>
+                            <p className="font-medium">Quizzes</p>
                         </span>
-                    </button>
+                    </Link>
                   
                 </div>
             </div>
             <div className="">
             <p className="px-9 font-light text-slate-600">Communications</p>
                 <div className="">
-                <button type="button" className="hover:border-l-8 hover:border-green-800 hover:bg-slate-100 transition-all py-2 w-full flex items-center justify-center">  
+                <Link to="message" className="hover:border-l-8 hover:border-green-800 hover:bg-slate-100 transition-all py-2 w-full flex items-center justify-center">  
                         <span className=" w-[70%] pl-3 flex items-center gap-3">
                             <span><MdOutlineSettingsInputAntenna /> </span>
-                            <p className="">Message</p>
+                            <p className="font-medium">Message</p>
                         </span>
-                    </button>
+                    </Link>
                 </div>
             </div>
             <div className="">
             <p className="px-9 font-light text-slate-600">Account Management</p>
                 <div className="flex flex-col">
-                <button type="button" className="hover:border-l-8 hover:border-green-800 hover:bg-slate-100 transition-all py-2 w-full flex items-center justify-center">  
+                <Link to="/admins" className="hover:border-l-8 hover:border-green-800 hover:bg-slate-100 transition-all py-2 w-full flex items-center justify-center">  
                         <span className=" w-[70%] pl-3 flex items-center gap-3">
                             <span><RiAdminFill /> </span>
-                            <p className="">Admins</p>
+                            <p className="font-medium">Admins</p>
                         </span>
-                    </button>
-                    <button type="button" className="hover:border-l-8 hover:border-green-800 hover:bg-slate-100 transition-all py-2 w-full flex items-center justify-center">  
+                    </Link>
+                    <Link to="/settings"  className="hover:border-l-8 hover:border-green-800 hover:bg-slate-100 transition-all py-2 w-full flex items-center justify-center">  
                         <span className=" w-[70%] pl-3 flex items-center gap-3">
                             <span><IoIosSettings /></span>
-                            <p className="">Settings</p>
+                            <p className="font-medium">Settings</p>
                         </span>
-                    </button>
-                    <button type="button" className="hover:border-l-8 hover:border-green-800 hover:bg-slate-100 transition-all py-2 w-full flex items-center justify-center">  
+                    </Link>
+                    < button type="button" className="hover:border-l-8 hover:border-green-800 hover:bg-slate-100 transition-all py-2 w-full flex items-center justify-center">  
                         <span className=" w-[70%] pl-3 flex items-center gap-3">
                             <span><FaPowerOff /> </span>
-                            <p className="">Log Out</p>
+                            <p className="font-medium">Log Out</p>
                         </span>
                     </button>
                 </div>
