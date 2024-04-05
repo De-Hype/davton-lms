@@ -5,7 +5,7 @@ import { MdOutlineWorkOutline } from "react-icons/md";
 
 const Settings = () => {
   return (
-    <div className=" pl-6 bg-green-50">
+    <div className=" pl-6 h-full bg-green-50">
       <h3 className="pt-8 pb-4 uppercase text-green-600">Settings</h3>
       <div className="shadow-2xl border-r bg-white mr-5 rounded-md">
         <h3 className=" py-4 font-bold text-xl border-b pl-6 text-slate-700">
