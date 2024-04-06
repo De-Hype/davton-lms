@@ -8,10 +8,15 @@ import Header from "./Components/Header";
 import Department from "./pages/Department";
 import Dashboard from "./pages/Dashboard";
 import Staff from "./pages/Staff";
+import ProjectDetails from "./pages/ProjectDetails";
 const App = () => {
   return (
     <>
       <Router>
+      <Routes>
+      <Route path="/details" exact element={<ProjectDetails />} />
+
+        </Routes>
         <div className="">
           <Header />
           <div className="flex">
