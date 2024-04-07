@@ -2,9 +2,19 @@ import { IoIosColorPalette, IoIosNotificationsOutline } from "react-icons/io";
 import { CiUnlock } from "react-icons/ci";
 import { SlUser } from "react-icons/sl";
 import { MdOutlineWorkOutline } from "react-icons/md";
+import Header from "../Components/Header";
+import AdminSidebar from "../Components/AdminSidebar";
 
 const Settings = () => {
   return (
+    <div className="">
+      <Header />
+      <div className="flex">
+        <AdminSidebar />
+        <div
+          style={{ width: "calc(100% - 250px)" }}
+          className="overflow-y-auto min-h-full"
+        >
     <div className=" pl-6 h-full bg-green-50">
       <h3 className="pt-8 pb-4 uppercase text-green-600">Settings</h3>
       <div className="shadow-2xl border-r bg-white mr-5 rounded-md">
@@ -59,6 +69,9 @@ const Settings = () => {
           </div>
         </div>
       </div>
+    </div>
+    </div>
+    </div>
     </div>
   );
 };

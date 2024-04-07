@@ -89,7 +89,7 @@ const AdminSidebar = () => {
               </span>
             </Link>
             <Link
-              to="reports"
+              to="/reports"
               onClick={() => handleButtonActive("reports")}
               className={`hover:border-l-8 hover:border-green-800 hover:bg-slate-100 transition-all ${
                 activeButton == "reports" &&
@@ -104,7 +104,7 @@ const AdminSidebar = () => {
               </span>
             </Link>
             <Link
-              to="quizzes"
+              to="/quizzes"
               onClick={() => handleButtonActive("quizzes")}
               className={`hover:border-l-8 hover:border-green-800 hover:bg-slate-100 transition-all ${
                 activeButton == "quizzes" &&

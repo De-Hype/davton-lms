@@ -1,7 +1,7 @@
-import AdminSidebar from "../Components/AdminSidebar";
-import Header from "../Components/Header";
+import AdminSidebar from "../Components/AdminSidebar"
+import Header from "../Components/Header"
 
-const Dashboard = () => {
+const Reports = () => {
   return (
     <div className="">
       <Header />
@@ -13,12 +13,12 @@ const Dashboard = () => {
         >
           {/* //Side of the page */}
           <div className="">
-            <h3 className="">This page is coming soon</h3>
+            <h3 className="">This page is not included</h3>
           </div>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Dashboard;
+export default Reports

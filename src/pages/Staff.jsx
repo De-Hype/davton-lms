@@ -1,8 +1,22 @@
+import AdminSidebar from "../Components/AdminSidebar"
+import Header from "../Components/Header"
 
 const Staff = () => {
   return (
-    <div className="">
-        <h3>This page was not indicated on the figma</h3>
+<div className="">
+      <Header />
+      <div className="flex">
+        <AdminSidebar />
+        <div
+          style={{ width: "calc(100% - 250px)" }}
+          className="overflow-y-auto min-h-full"
+        >
+          {/* //Side of the page */}
+          <div className="">
+            <h3 className="">This page not included</h3>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
