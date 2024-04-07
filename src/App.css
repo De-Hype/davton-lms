@@ -1,3 +1,6 @@
 .hero-image{
     background-image: url("./assets/heroImg.svg");
 }
+.details-img{
+    background-image: url("./assets/detailsImg.svg");
+}
