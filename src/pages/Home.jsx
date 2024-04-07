@@ -1,24 +1,38 @@
-import AdminSidebar from "../Components/AdminSidebar";
-import Header from "../Components/Header";
-
+import HeaderTwo from "../Components/HeaderTwo";
+import logoTwo from "../assets/logoTwo.svg";
+import { FaCircleInfo } from "react-icons/fa6";
 const Home = () => {
   return (
-<div className="">
-      <Header />
-      <div className="flex">
-        <AdminSidebar />
-        <div
-          style={{ width: "calc(100% - 250px)" }}
-          className="overflow-y-auto min-h-full"
-        >
-          {/* //Side of the page */}
-          <div className="">
-            <h3 className="">Please Click some of the sidebar, some are now showing stuff</h3>
+    <div className="">
+      <HeaderTwo />
+      <div className="relative flex items-center h-[90vh] hero-image">
+        <div className="pl-6 w-[450px] text-white flex flex-col gap-3">
+          <img className="h-8 w-8" src={logoTwo} alt="" />
+          <h4 className="font-semibold">PROJECT MANAGEMENT</h4>
+          <h2 className="text-3xl font-black">THE ESSENTIAL</h2>
+          <p className="">
+            Understand your audience, envision a creative solution, and test
+            your prototype by Cooper Professional Education | By Cooper
+            Professional Education
+          </p>
+          <div className="flex items-center gap-2">
+            <button
+              className="bg-white py-1 px-3 rounded-sm text-sm text-red-500"
+              type="button"
+            >
+              Watch Now
+            </button>
+            <button
+              className="bg-transparent flex items-center gap-2 border py-1 px-3 rounded-sm text-sm"
+              type="button"
+            >
+              <FaCircleInfo /> <span>More Info</span>
+            </button>
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Home;
