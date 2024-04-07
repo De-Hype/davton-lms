@@ -7,15 +7,14 @@ import AdminSidebar from "./Components/AdminSidebar";
 import Header from "./Components/Header";
 import Department from "./pages/Department";
 import Dashboard from "./pages/Dashboard";
-import Staff from "./pages/Staff";
 import ProjectDetails from "./pages/ProjectDetails";
+import Staff from "./pages/Staff";
 const App = () => {
   return (
     <>
       <Router>
-      <Routes>
-      <Route path="/details" exact element={<ProjectDetails />} />
-
+        <Routes>
+        <Route path="/details" exact element={<ProjectDetails />} />
         </Routes>
         <div className="">
           <Header />
@@ -28,7 +27,7 @@ const App = () => {
               <Routes>
                 <Route path="/" exact element={<Home />} />
                 <Route path="/dashboard" exact element={<Dashboard />} />
-                <Route path="staff" exact element={<Staff />} />
+                <Route path="/staff" exact element={<Staff />} />
                 <Route path="/department" exact element={<Department />} />
                 <Route path="/settings" exact element={<Settings />} />
                 <Route path="/courses" exact element={<Courses />} />
