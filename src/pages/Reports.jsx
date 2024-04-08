@@ -6,7 +6,7 @@ const Reports = () => {
     <div className="">
       <Header />
       <div className="flex">
-        <AdminSidebar />
+      <AdminSidebar defaultLink={"reports"} />
         <div
           style={{ width: "calc(100% - 250px)" }}
           className="overflow-y-auto min-h-full"

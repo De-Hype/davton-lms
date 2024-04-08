@@ -11,10 +11,12 @@ import { FaPowerOff } from "react-icons/fa";
 import { RiAdminFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-const AdminSidebar = () => {
-  const [activeButton, setActiveButton] = useState(null);
+const AdminSidebar = ({defaultLink}) => {
+
+  const [activeButton, setActiveButton] = useState(defaultLink);
   const handleButtonActive = (button) => {
-    setActiveButton(button);
+
+    return setActiveButton(button);
   };
   return (
     <div className="h-screen shadow-2xl border-r w-[250px] pt-5 ">

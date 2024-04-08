@@ -1,6 +1,11 @@
 import { FaBell } from "react-icons/fa";
 import logoTwo from "../assets/logoTwo.svg";
+import { useState } from "react";
 const HeaderTwo = () => {
+    const [showNotification, setShowNotification] = useState(false);
+    const handleShowNotification=()=>{
+        setShowNotification(!showNotification);
+    }
   return (
     <div className="flex justify-between px-4 py-4 items-center gap-3">
       <div className="flex items-center">
@@ -11,7 +16,7 @@ const HeaderTwo = () => {
       </div>
       <div className="flex items-center gap-6">
         <div className="relative">
-          <FaBell className="text-2xl" />
+          <FaBell onClick={handleShowNotification} className="text-2xl" />
           <span className="h-2 w-2 top-0 right-0 rounded-full bg-red-600 absolute"></span>
         </div>
         <div className="flex items-center text-sm">
